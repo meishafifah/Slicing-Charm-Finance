@@ -1,0 +1,91 @@
+@font-face {
+    font-family: r-300;
+    font-display: auto;
+    font-style: normal;
+    src: url('../fonts/Raleway-Light.ttf') format('truetype');
+}
+.r-300 {
+    font-family: r-300;
+}
+
+@font-face {
+    font-family: r-400;
+    font-display: auto;
+    font-style: normal;
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype'),
+    url('../fonts/Raleway-Regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Raleway-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Raleway-Regular.woff') format('woff'),    
+    url('../fonts/Raleway-Regular.svg') format('svg'); /* Legacy iOS */
+}
+.r-400 {
+    font-family: r-400;
+}
+
+@font-face {
+    font-family: r-500;
+    font-display: auto;
+    font-style: normal;
+    src: url('../fonts/Raleway-Medium.ttf') format('truetype'),
+    url('../fonts/Raleway-Medium.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Raleway-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Raleway-Medium.woff') format('woff'),    
+    url('../fonts/Raleway-Medium.svg') format('svg'); /* Legacy iOS */
+}
+.r-500 {
+    font-family: r-500;
+}
+
+@font-face {
+    font-family: r-600;
+    font-display: auto;
+    font-style: normal;
+    src: url('../fonts/Raleway-SemiBold.ttf') format('truetype'),
+    url('../fonts/Raleway-SemiBold.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Raleway-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Raleway-SemiBold.woff') format('woff'),    
+    url('../fonts/Raleway-SemiBold.svg') format('svg'); 
+}/* Legacy iOS */
+.r-600 {
+    font-family: r-600;
+}
+
+@font-face {
+    font-family: r-700;
+    font-display: auto;
+    font-style: normal;
+    src: url('../fonts/Raleway-Bold.ttf') format('truetype'),
+    url('../fonts/Raleway-Bold.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Raleway-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Raleway-Bold.woff') format('woff'),    
+    url('../fonts/Raleway-Bold.svg') format('svg'); /* Legacy iOS */
+}
+.r-700 {
+    font-family: r-700;
+}
+
+
+h1 {
+    font-size: 72px;
+}
+h2 {
+    font-size: 32px;
+    font-family: r-700;
+}
+p {
+    font-size: 24px;
+    font-family: r-500;
+}
+
+.font-16 {
+    font-size: 16px!important;
+}
+
+.font-48 {
+    font-size: 48px;
+}
+
+body {
+    font-size: 24px;
+    color: black;
+}
