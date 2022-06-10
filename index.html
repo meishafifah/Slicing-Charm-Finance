@@ -14,8 +14,8 @@
 </head>
 <body>
     <!-- navbar -->
-    <section id="navbar" class="container">
-        <div class="">
+    <section id="navbar" class="fixed-top">
+        <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand d-flex" href="#">
@@ -23,10 +23,10 @@
                         <img class="line-ic" src="img/line-ic.png" alt="">
                         <p class="r-600 blue mb-0 align-self-center">Alpha Vaults</p>
                     </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <div class="collapse navbar-collapse justify-content-center hehe" id="navbarNav">
                     <ul class="navbar-nav r-600">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle nv-16" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,7 +56,7 @@
                         </li>
                     </ul>
                     </div>
-                    <div class="btn btn-fill-av reverse">Launch App</div>
+                    <div id="hai" class="btn btn-fill-av reverse hai">Launch App</div>
                 </div>
                 </nav>
         </div>
@@ -107,7 +107,7 @@
     <!-- benefit -->
     <section id="benefit" class="benefit">
         <h2 class="separator inline">Why Alpha Vaults</h2>
-        <div class="container">
+        <div class="container overflow-hidden">
             <div id="owl-carousel-1" class="owl-carousel owl-theme">
                 <div class="item"> 
                     <div class="card">
@@ -143,7 +143,8 @@
     <!-- charm -->
     <section id="charm" class="charm">
         <h2 class="separator inline pb-120">About Charm</h2>
-        <div class="container">
+        <!--- container e ditambahi overflow-hidden -->
+        <div class="container overflow-hidden">
             <h2>Charm’s mission is to <strong>connect crypto value to real value</strong></h2>
             <br>
             <h2 class="blue pb-120 r-500">Charm is:</h2>
@@ -163,7 +164,7 @@
                         <img id="ic-4" src="img/plus-pink-ic.png" alt="">
                     </button>
                 </div>
-                
+
                 <div class="item"> 
                     <h2 class="r-700 mb-4">A platform <br> builder</h2>
                     <button id="but-3" class="but">
@@ -198,8 +199,6 @@
         </div>
     </footer>
 
-    
-
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -211,25 +210,21 @@
             loop: false,
             margin: 30,
             startPosition: 1,
-            items: 3,
             navText: [
                 "<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 24L12 16L20 8' stroke='' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>",
                 "<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 24L20 16L12 8' stroke='' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg> "
             ],
             responsiveClass:true,
             responsive:{
-                600:{
-                    items:3
+                0:{
+                    items:1
                 },
                 500:{
                     items:2
                 },
-                375:{
-                    items:1
-                },
-                0:{
-                    items:1
-                },
+                600:{
+                    items:3
+                }
             }
         });
         $('#owl-carousel-2').owlCarousel({
@@ -245,18 +240,15 @@
             ],
             responsiveClass:true,
             responsive:{
-                600:{
-                    items:3
+                0:{
+                    items:1
                 },
                 500:{
                     items:2
                 },
-                375:{
-                    items:1
-                },
-                0:{
-                    items:1
-                },
+                600:{
+                    items:3
+                }
             }
         });
     </script>

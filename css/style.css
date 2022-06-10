@@ -1,13 +1,23 @@
+footer .display-flex {
+    justify-content: space-between;
+}
+
+.fixed-top {
+    position: fixed !important;
+}
+
 #card br {
     display: none;
 }
 
-
 #charm button {
     border: none;
     background-color: unset;
-    width: 100%;
     text-align: -webkit-center;
+}
+
+#charm button img {
+    width: 70%;
 }
 
 #ic-2 {
@@ -20,11 +30,11 @@
     display: none;
 }
 
-#item .show-ic {
+#charm .show-ic {
     display: block!important;
 }
 
-#item .hide-ic {
+#charm .hide-ic {
     display: none;
 }
 
@@ -93,6 +103,10 @@ body {
     background-color: transparent;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 .d-flex img {
     padding: 10px;
 }
@@ -130,6 +144,10 @@ body {
     background-color: #FF007A;
 }
 
+#hero h1 {
+    padding-top: 120px;
+}
+
 #hero .relative {
     top: -330px;
 }
@@ -139,10 +157,11 @@ body {
     padding: 138px 0px 200px 0px;
 }
 
-#hero .hero-img{
-    width: 100%;
+#hero .hero-img {
+    height: 800px;
     top: 0px;
     bottom: 0px;
+    width: 100%;
 }
 
 #hero .down {
@@ -371,14 +390,32 @@ h2 {
 }
 
 @media (max-width:991px) {
+
+    .hai {
+        position: absolute;
+        right: 80px;
+        top: 8px;
+        transition: 0.3s linear;
+    }
+
+    .hai-2 {
+        top: 78px;
+    width: 100%;
+    left: 0;
+    }
+
+    .hehe {
+        padding-top: 78px;
+    }
+
     .navbar-collapse {
         justify-content: start!important;
     }
-    .reverse {
+    /* .reverse {
         display: flex;
         flex-direction: row-reverse;
         
-    }
+    } */
     #navbar.container {
         max-width: 95%;
     }
@@ -426,6 +463,9 @@ h2 {
 }
 
 @media (max-width:965px) {
+    #hero .hero-img {
+        height: 774px;
+    }
     #card-area .card {
         height: 360px;
     }
@@ -461,6 +501,9 @@ h2 {
     }
     btn-outline-av {
         padding: 15px 45px;
+    }
+    #hero .hero-img {
+        height: 681px;
     }
     .hero-container {
         padding: 94px 0px;
@@ -509,6 +552,9 @@ h2 {
 }
 
 @media (max-width:786px) {
+    #hero .hero-img {
+        height: 610px;
+    }
     .hero-container {
         padding: 60px 0px;
     }
@@ -524,6 +570,9 @@ h2 {
 }
 
 @media (max-width:768px) {
+    #hero .hero-img {
+        height: 571px;
+    }
     h1 {
         font-size: 32px!important;
     }
@@ -564,8 +613,11 @@ h2 {
     .hero-container {
         padding: 60px 0px 23px 0px;
     }
+    #hero .hero-img {
+        height: 525px;
+    }
     #hero .relative {
-        top: -250px;
+        top: -210px;
     }
     #card-area {
         padding: 70px 45px;
@@ -591,11 +643,14 @@ h2 {
         height: 500px;
     }
     .hero-container {
-        padding: 60px 0px;
+        padding: 30px 0px;
     }
 }
 
 @media (max-width:575px) {
+    #hero .hero-img {
+        height: 515px;
+    }
     #card-area .card-head {
         padding: 80px 48px;
     }
@@ -608,6 +663,10 @@ h2 {
     }
     #benefit .card {
         height: 320px;
+    }
+    .display-flex img {
+        padding: 20px!important;
+        width: 13%;
     }
 }
 
@@ -625,15 +684,34 @@ h2 {
         text-align: center;
         padding: 50px 50px;
     }
+    .hero-container {
+        padding: 30px 10px;
+    }
 }
 
 @media (max-width:431px) {
+    #hero .hero-img {
+        height: 545px;
+    }
     #benefit .item {
         padding: 0px 57px;
     }
     #benefit .card {
         height: unset;
         padding: 66px 32px;
+    }
+    #card-area {
+        padding: 60px 20px;
+    }
+    #benefit .container {
+        padding: 60px 0px;
+    }
+    .display-flex img {
+        padding: 19px!important;
+        width: 14%;
+    }
+    .hero-container {
+        padding: 30px 10px;
     }
 }
 

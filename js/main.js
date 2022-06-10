@@ -49,3 +49,9 @@ builder.onclick = function() {
     var creatorInfo = document.getElementById('creator-info')
     creatorInfo.classList.toggle('charm-2')
 }
+
+let navbar_toggler = document.getElementById('navbar-toggler')
+navbar_toggler.onclick = function () {
+    let button = document.getElementById('hai')
+    button.classList.toggle('hai-2')
+}
