@@ -154,7 +154,7 @@ body {
 
 .hero-container {
     text-align: center;
-    padding: 138px 0px 200px 0px;
+    padding: 100px 0px ;
 }
 
 #hero .hero-img {
@@ -333,7 +333,7 @@ h2 {
 
 @media (max-width:1300px) {
     .hero-container {
-        padding: 155px 0px;
+        padding: 100px 0px;
     }
     .hero .relative {
         top: -325px;
@@ -345,10 +345,7 @@ h2 {
 
 @media (max-width:1225px) {
     #card-area {
-        padding: 160px 200px;
-    }
-    .hero-container {
-        padding: 110px 0px;
+        padding: 90px 200px;
     }
 }
 
@@ -667,6 +664,12 @@ h2 {
     .display-flex img {
         padding: 20px!important;
         width: 13%;
+    }
+    .line-ic {
+        display: none;
+    }
+    .d-flex p {
+        display: none;
     }
 }
 
